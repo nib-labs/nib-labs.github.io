@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Contact" description="Contact NIB Labs">
+  <Navbar />
+  <main class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+    <h1 class="font-display text-3xl font-bold text-brand-primary">Contact</h1>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      <div class="rounded-card border border-white/5 bg-white/5 p-6">
+        <h2 class="font-semibold">Email</h2>
+        <p class="mt-2 text-brand-muted"><a class="underline hover:text-white" href="mailto:info@niblabs.com">info@niblabs.com</a></p>
+      </div>
+      <div class="rounded-card border border-white/5 bg-white/5 p-6">
+        <h2 class="font-semibold">Headquarters</h2>
+        <p class="mt-2 text-brand-muted">(add your address or leave this card out)</p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

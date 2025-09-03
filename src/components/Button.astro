@@ -1,0 +1,11 @@
+---
+const { href = '#', variant = 'primary' } = Astro.props;
+const base = 'inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium transition shadow-soft';
+const variants = {
+  primary: 'bg-brand-primary text-white hover:opacity-90',
+  secondary: 'bg-transparent text-brand-secondary border border-brand-secondary hover:bg-brand-secondary/10',
+};
+---
+<a href={href} class={`${base} ${variants[variant]}`}>
+  <slot />   <!-- Qui usiamo uno slot per mostrare il contenuto -->
+</a>

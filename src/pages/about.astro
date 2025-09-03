@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="About" description="About NIB Labs">
+  <Navbar />
+  <main class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+    <h1 class="font-display text-3xl font-bold text-brand-primary">About NIB Labs</h1>
+    <div class="prose prose-invert max-w-none">
+      <p>We build software and deliver services that make mainframe‑to‑cloud migration seamless.</p>
+      <p>As the only company offering solutions to transform legacy applications into true cloud‑native systems — both Java and .NET — we empower enterprises to modernize faster, smarter, and with confidence.</p>
+    </div>
+  </main>
+  <Footer />
+</Layout>

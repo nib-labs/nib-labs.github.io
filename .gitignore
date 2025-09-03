@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment
+.env
+.env.*
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Lock files (opzionale se vuoi evitarli)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

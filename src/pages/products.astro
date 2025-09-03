@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+const products = [
+  { name: 'NIB Java', desc: 'Cloud-native framework for Java.' },
+  { name: 'NIB .NET', desc: 'Cloud-native framework for .NET.' },
+  { name: 'NIB Language Converters', desc: 'Legacy language converters targeting Java and C#.' },
+  { name: 'Spade', desc: 'Multi-source data converter for complex enterprise workloads.' },
+];
+---
+<Layout title="Products" description="Frameworks and tools for modernization">
+  <Navbar />
+  <main class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+    <h1 class="font-display text-3xl font-bold text-brand-primary">Products</h1>
+    <p class="mt-2 text-brand-muted max-w-2xl">Frameworks and tools that enable fast, reliable modernization from mainframe to cloud.</p>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2">
+      {products.map((p) => (
+        <article class="rounded-card border border-white/5 bg-white/5 p-6">
+          <h2 class="text-lg font-semibold">{p.name}</h2>
+          <p class="mt-2 text-brand-muted">{p.desc}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</Layout>

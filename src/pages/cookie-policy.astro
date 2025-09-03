@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Cookie Policy" description="Cookie Policy">
+  <Navbar />
+  <main class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+    <h1 class="font-display text-3xl font-bold text-brand-primary">Cookie Policy</h1>
+    <div class="prose prose-invert max-w-none">
+      <p>This website uses only essential cookies required for core functionality. We do not use tracking or analytics cookies by default.</p>
+      <p>If we introduce optional analytics or marketing cookies in the future, we will request your consent in accordance with applicable laws.</p>
+    </div>
+  </main>
+  <Footer />
+</Layout>

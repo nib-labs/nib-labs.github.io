@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+const services = [
+  { name: 'Software Whitelabeling', desc: 'Customizing and branding our software products to fit client needs.' },
+  { name: 'Language Conversion', desc: 'Migrating legacy codebases to modern Java or .NET platforms.' },
+  { name: 'Data Conversion', desc: 'Transforming and migrating enterprise data between heterogeneous systems.' },
+];
+---
+<Layout title="Services" description="Services for modernization">
+  <Navbar />
+  <main class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+    <h1 class="font-display text-3xl font-bold text-brand-primary">Services</h1>
+    <p class="mt-2 text-brand-muted max-w-2xl">Expert services that complement our products for end‑to‑end transformation.</p>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2">
+      {services.map((s) => (
+        <article class="rounded-card border border-white/5 bg-white/5 p-6">
+          <h2 class="text-lg font-semibold">{s.name}</h2>
+          <p class="mt-2 text-brand-muted">{s.desc}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</Layout>
