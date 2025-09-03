@@ -1,0 +1,82 @@
+---
+import ProductLayout from '../../layouts/ProductLayout.astro';
+import Section from '../../components/Section.astro';
+
+const title = 'NIB Java';
+const description = 'Cloud-native framework that accelerates the modernization of mainframe workloads into scalable, cloud-native applications.';
+const heroSubtitle = 'Cloud-native modernization, made simple.';
+---
+<ProductLayout
+  title={title}
+  description={description}
+  heroTitle={title}
+  heroSubtitle={heroSubtitle}
+>
+  <!-- Overview -->
+  <Section
+    title="Overview"
+    subtitle="NIB Java is a commercial, cloud-native framework that simplifies the modernization of mainframe workloads. Built on Spring Boot and Spring Cloud, it supports both online and batch processes, enabling a smooth transition from legacy environments to scalable cloud-native architectures. With built-in support for CICS, JCL, DB2, and MQ, NIB Java reduces migration time while preserving existing business logic, delivering the reliability and performance required by enterprise systems."
+  />
+
+  <!-- Grid con due box per riga -->
+  <div class="grid gap-6 sm:grid-cols-2 mt-10">
+    <!-- Key Features -->
+    <div class="rounded-card border border-white/5 bg-white/5 p-6">
+      <h2 class="font-display text-xl font-bold text-brand-primary mb-4">Key Features</h2>
+      <ul class="list-disc pl-5 space-y-2 text-brand-muted">
+        <li><strong>Support for online and batch workloads</strong> — CICS-driven transactions and JCL-based batch processes.</li>
+        <li><strong>Cloud-native architecture</strong> — Container-ready, scalable, and resilient.</li>
+        <li><strong>Spring Boot & Spring Cloud</strong> — Built on familiar enterprise frameworks.</li>
+        <li><strong>Built-in mainframe support</strong> — CICS, JCL, DB2, and MQ out of the box.</li>
+        <li><strong>Scale-out & serverless ready</strong> — Works with Kubernetes, OpenShift, AWS Lambda, and Azure Functions.</li>
+        <li><strong>Enterprise-grade reliability</strong> — Optimized for performance, resilience, and operational stability.</li>
+      </ul>
+    </div>
+
+    <!-- Deploy Anywhere -->
+    <div class="rounded-card border border-white/5 bg-white/5 p-6">
+      <h2 class="font-display text-xl font-bold text-brand-primary mb-4">Deploy Anywhere</h2>
+      <ul class="list-disc pl-5 space-y-2 text-brand-muted">
+        <li><strong>Kubernetes & OpenShift</strong> — Native container deployment support.</li>
+        <li><strong>Public clouds</strong> — AWS EKS, Azure AKS, Google GKE compatible.</li>
+        <li><strong>Hybrid environments</strong> — Flexible for mixed on-prem and cloud topologies.</li>
+        <li><strong>Serverless platforms</strong> — AWS Lambda, Azure Functions, Google Cloud Functions.</li>
+        <li><strong>On-premise deployments</strong> — Fully supported for private infrastructure.</li>
+      </ul>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="rounded-card border border-white/5 bg-white/5 p-6">
+      <h2 class="font-display text-xl font-bold text-brand-primary mb-4">Use Cases</h2>
+      <ul class="list-disc pl-5 space-y-2 text-brand-muted">
+        <li><strong>Mainframe application modernization</strong> — Transform legacy CICS and JCL workloads into modern, scalable microservices.</li>
+        <li><strong>Core system refactoring</strong> — Re-engineer business-critical applications for cloud-native execution while preserving logic.</li>
+        <li><strong>Hybrid & multi-cloud</strong> — Run seamlessly across Kubernetes, OpenShift, and major cloud platforms.</li>
+        <li><strong>Serverless execution</strong> — Event-driven workloads optimized for elasticity and cost efficiency.</li>
+      </ul>
+    </div>
+
+    <!-- Benefits -->
+    <div class="rounded-card border border-white/5 bg-white/5 p-6">
+      <h2 class="font-display text-xl font-bold text-brand-primary mb-4">Benefits</h2>
+      <ul class="list-disc pl-5 space-y-2 text-brand-muted">
+        <li><strong>Faster migration</strong> — Built-in mainframe compatibility accelerates projects.</li>
+        <li><strong>Legacy feature retention</strong> — Smooth transitions with CICS, JCL, DB2, and MQ support.</li>
+        <li><strong>Scalable & resilient</strong> — Horizontal scaling and cloud-native reliability.</li>
+        <li><strong>Developer productivity</strong> — Spring ecosystem familiarity reduces learning curve.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <Section>
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h3 class="font-display text-2xl font-bold text-brand-primary">Ready to modernize?</h3>
+      <p class="text-brand-muted">Let’s discuss your mainframe portfolio and build a migration path with NIB Java.</p>
+      <div class="mt-2 flex gap-4">
+        <a href="/contact" class="inline-flex rounded-lg bg-brand-primary px-5 py-3 text-sm font-medium text-white">Request a Demo</a>
+        <a href="/products" class="inline-flex rounded-lg border border-brand-secondary px-5 py-3 text-sm font-medium text-brand-secondary hover:bg-brand-secondary/10">Back to Products</a>
+      </div>
+    </div>
+  </Section>
+</ProductLayout>
