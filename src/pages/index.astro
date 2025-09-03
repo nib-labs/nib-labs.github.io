@@ -1,15 +1,33 @@
-
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
 ---
-<Layout title="Under Construction" description="Our website is coming soon!">
-  <main class="flex flex-col items-center justify-center min-h-screen text-center bg-brand-bg text-brand-text px-6">
-    <h1 class="font-display text-4xl sm:text-5xl font-bold text-brand-primary">🚧 Under Construction 🚧</h1>
-    <p class="mt-4 text-lg text-brand-secondary max-w-2xl">
-      Our new website will be live soon. Stay tuned!
-    </p>
-    <p class="mt-8 text-sm text-brand-muted">
-      NIB Labs — Rethinking legacy modernization
-    </p>
+<Layout title="Home" description="Rethinking legacy modernization">
+  <Navbar />
+  <main>
+    <Hero
+      title="Rethinking Legacy Modernization"
+      subtitle="Transforming mainframe workloads into scalable cloud‑native applications with our unique frameworks and conversion tools." 
+      />
+
+    <section class="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-8 sm:grid-cols-3">
+        <div class="rounded-card border border-white/5 bg-white/5 p-6 backdrop-blur">
+          <h3 class="font-semibold">Products & Services</h3>
+          <p class="mt-2 text-brand-muted">Frameworks and tools plus expert services for end‑to‑end modernization.</p>
+        </div>
+        <div class="rounded-card border border-white/5 bg-white/5 p-6 backdrop-blur">
+          <h3 class="font-semibold">Java & .NET Cloud‑Native</h3>
+          <p class="mt-2 text-brand-muted">The only provider enabling true cloud‑native transformation for both stacks.</p>
+        </div>
+        <div class="rounded-card border border-white/5 bg-white/5 p-6 backdrop-blur">
+          <h3 class="font-semibold">Mainframe to Cloud</h3>
+          <p class="mt-2 text-brand-muted">From assessment to conversion and data migration—faster and safer.</p>
+        </div>
+      </div>
+    </section>
   </main>
+  <Footer />
 </Layout>

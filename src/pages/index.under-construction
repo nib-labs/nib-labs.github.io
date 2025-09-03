@@ -1,0 +1,15 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Under Construction" description="Our website is coming soon!">
+  <main class="flex flex-col items-center justify-center min-h-screen text-center bg-brand-bg text-brand-text px-6">
+    <h1 class="font-display text-4xl sm:text-5xl font-bold text-brand-primary">🚧 Under Construction 🚧</h1>
+    <p class="mt-4 text-lg text-brand-secondary max-w-2xl">
+      Our new website will be live soon. Stay tuned!
+    </p>
+    <p class="mt-8 text-sm text-brand-muted">
+      NIB Labs — Rethinking legacy modernization
+    </p>
+  </main>
+</Layout>
